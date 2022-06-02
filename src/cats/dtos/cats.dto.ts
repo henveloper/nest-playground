@@ -1,3 +1,3 @@
 export class CreateCatDto {
-    public name: string;
+    public name: string = "";
 }

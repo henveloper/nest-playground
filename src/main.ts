@@ -6,7 +6,9 @@ import { AppModule } from './app.module';
 
 async function bootstrap() {
   // default/other underlying http servers have type extends INestApplication, no need to state if no use
-  const app = await NestFactory.create<INestApplication>(AppModule);
+  const app = await NestFactory.create<INestApplication>(
+    AppModule,
+  );
 
   // documentation
   // https://docs.nestjs.com/openapi/introduction
